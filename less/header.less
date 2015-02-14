@@ -1,0 +1,202 @@
+.top {
+  height: 3px;
+  background-color: #FE9B1A;
+}
+.mainControl{
+  background-color: #FFFFFF;
+  height: 85px;
+  margin-left:auto;
+  margin-right:auto;
+  .lang{
+    width: 60px;
+    float: left;
+    margin-left: 120px;
+    display: none;
+    .common{
+      color: #666666;
+      text-align: center;
+    }
+    .higlight{
+      color: #FF6633;
+      text-align: center;
+    }
+    .margin{
+      margin-top: 5px;
+    }
+    p{
+      font-size: 5px;
+    }
+  }
+  .headTag{
+    width: 1082px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 86px;
+    .headPicture {
+      width: 418px;
+      float: left;
+      img {
+        margin-top: 5px;
+        float: left;
+        width: 80px;
+        margin-right: 18px;
+      }
+      p {
+        font-size:33px;
+        font-weight: 900;
+        margin-top: 12px;
+        margin-left: 80px;
+      }
+      @keyframes colorswitch{
+        0% {color: red}
+        100% {color: black}
+      }
+      @-moz-keyframes colorswitch{
+        0% {color: red}
+        100% {color: black}
+      }
+      @-webkit-keyframes colorswitch{
+        0% {color: red}
+        100% {color: black}
+      }
+      @-o-keyframes colorswitch{
+        0%  {color: red}
+        100% {color: black}
+      }
+      .animateP{
+        //IE
+        animation-name: colorswitch;
+        animation-duration:5s;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;
+        //FireFox
+        -moz-animation-name: colorswitch;
+        -moz-animation-duration:5s;
+        -moz-animation-iteration-count:infinite;
+        -moz-animation-direction:alternate;
+        //Chrome
+        -webkit-animation-name: colorswitch;
+        -webkit-animation-duration:5s;
+        -webkit-animation-iteration-count:infinite;
+        -webkit-animation-direction:alternate;
+        //Opera
+        -o-animation-name: colorswitch;
+        -o-animation-duration:5s;
+        -o-animation-iteration-count:infinite;
+        -o-animation-direction:alternate;
+        &:hover{
+          zoom: 1.1;
+        }
+      }
+    }
+    .mainFirst {
+      float: left;
+      text-align: center;
+      height: 86px;
+      font-size: 17px;
+      width: 107px;
+      line-height: 86px;
+      &:hover{
+        color: #FF6600;
+      }
+      .homeBox{
+        height: 86px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60px;
+        img{
+          float: left;
+          margin-top: 35px;
+          margin-right: 6px;
+          height: 17px;
+        }
+        p{
+          float: left;
+          font-size: 17px;
+          //font-family: Ariai;
+        }
+      }
+
+    }
+    .selFirst {
+      float: left;
+      text-align: center;
+      //height: 70px;
+      font-weight: bolder;
+      background-color:#FE9B1A;
+      .homeBox{
+        //border-bottom-style: solid;
+        //height: 45px;
+        color: #fff;
+      }
+
+    }
+    .mainCommon {
+      text-align: center;
+      font-size: 17px;
+      //font-family: Ariai;
+      width: 107px;
+      float: left;
+      height: 86px;
+      line-height: 86px;
+        &:hover{
+        color: #FF6600;
+      }
+      p{
+        width: 70px;
+        height: 45px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .selectedHead{
+      text-align: center;
+      //height: 62px;
+      //font-family: Ariai;
+      p{
+        //border-bottom-style: solid;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+        font-weight: bolder;
+      }
+      background-color:#FE9B1A;
+      //text-decoration:underline;
+    }
+  }
+  #loginButton{
+  width: 200px;
+  float: left;
+  display: none;
+  input{
+    margin-top: 17px;
+    width: 60px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    font-weight: 900;
+    border: none;
+  }
+  .headBu{
+    border: none;
+  }
+  .clicked{
+    color: rgb(239, 137, 21);
+    border: none;
+  }
+  }.clear{
+    //color: #666666;
+    border: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

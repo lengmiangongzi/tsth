@@ -1,0 +1,12 @@
+#bower
+js/bower_components/
+
+#css
+css/
+
+#build
+build/
+
+
+#mac
+.DS_Store

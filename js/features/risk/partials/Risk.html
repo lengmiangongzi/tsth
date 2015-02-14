@@ -1,0 +1,35 @@
+<div>
+    <div class="titleBack" >
+    <div class="titleTag" ng-mouseenter="proTag=true" ng-mouseleave="proTag=false">
+        <div class="titleTag"><p>投资风控</p></div>
+    </div>
+    </div>
+</div>
+<div class="infoBox">
+        <div class='infoSelect firstSlecet clickHover' ng-click="toRule()" ng-class='{"rule": "infoSel"}[riskTag]'><p>投资理念</p><img src="img/info/arrow.png" ng-show="riskTag=='rule'"></div>
+        <div class='infoSelect clickHover' ng-click="toStratge()" ng-class='{"stratge": "infoSel"}[riskTag]' ><p style="margin-left:-65px">投资策略</p><img src="img/info/arrow.png" ng-show="riskTag=='stratge'"></div>
+        <div class= 'infoSelect clickHover' ng-click="toRisk()" ng-class='{"risk": "infoSel"}[riskTag]' ><p style="margin-left:-65px">风险保证</p><img src="img/info/arrow.png" ng-show="riskTag=='risk'"></div>
+</div>
+<div class="infoContent">
+    <div class="contentLeft">
+        <div ng-show="riskTag == 'rule'"><rule></rule></div>
+        <div ng-show="riskTag == 'stratge'"><stratge></stratge></div>
+        <div ng-show="riskTag == 'risk'"><risk></risk></div>
+    </div>
+    <div class="infoSearch">
+        <div class="blank"></div>
+        <!--<p>搜索</p>
+        <div class="seaCon">
+        <input type="text" value="搜索关键字" onfocus="if(this.value == '搜索关键字') this.value = ''" onblur="if(this.value =='') this.value = '搜索关键字'"/><img src="img/info/search.png"></div>
+        <br>
+        <br>-->
+        <p>联系我们</p>
+        <div></div>
+        <div class="icons">
+            <img src="img/info/phone.png"/>
+            <p>021 555 333 22</p>
+            <!--<img src="img/info/weixin.png"><p>微信公众号：桐昇</p>-->
+            <img src="img/info/mail.png"><p>info@tsth.com</p>
+        </div>
+    </div>
+</div>

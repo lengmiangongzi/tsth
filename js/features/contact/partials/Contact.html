@@ -1,0 +1,45 @@
+<div>
+    <div class="titleBack" >
+    <div class="titleTag" ng-mouseenter="proTag=true" ng-mouseleave="proTag=false">
+        <div class="titleTag"><p>联系我们</p></div>
+    </div>
+    </div>
+</div>
+<div class="contactContent">
+    <div class="contactWay">
+        <div class="phone">
+            <img src="img/contact/phone.png">
+            <p class="title">座机号码</p>
+            <p>+86-21-60216378</p>
+        </div>
+        <div class="web">
+            <img src="img/contact/web.png">
+            <p class="title">公司地址</p>
+            <p>陆家嘴西路99号 上海浦东</p>
+        </div>
+        <div class="fax">
+            <img src="img/contact/fax.png">
+            <p class="title">传真号码</p>
+            <p>+86-21-60216378</p>
+        </div>
+        <div class="spaceing"><img src=""><p></p><p></p></div>
+    </div>
+        <div class="companyMap">
+            <img src="img/contact/aMap.png" ng-if="showImage"/>
+            <div ng-show='!showImage'>
+                <mg-map options="map" ></mg-map>
+            </div>
+        </div>
+    <div class='message'>
+        <div><br><p>留言我们</p></div>
+        <div>
+        <div class='div-inline' ><p>姓名</p><input type="text"></div>
+        <div class='div-inline'><p>邮件</p><input type="text"></div>
+        <div class='div-inline'><p>主题</p><input type="text"></div>
+        </div>
+        <div  class='content' >
+            <p>内容</p>
+            <textarea rows="3" cols="20" ></textarea>
+        </div>
+    </div>
+</div>

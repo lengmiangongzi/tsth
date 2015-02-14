@@ -1,0 +1,42 @@
+<div class="newsHead">
+    <!--<div><p class="infoHead">公司动态</p></div>-->
+    <!--<div class="newsSum fistSum">
+        <div>
+            <img src="../img/news/content1.png" alt="">
+            <span>桐昇通惠是由美国资深量化基金经理创办的高科技资产管</span><span class="etc">>>></span>
+        </div>
+        <div>
+            <img src="../img/news/content2.png" alt="">
+            <span>桐昇通惠是由美国资深量化基金经理创办的高科技资产管</span><span class="etc">>>></span>
+        </div>
+        <div>
+            <img src="../img/news/content3.png" alt="">
+            <span>桐昇通惠是由美国资深量化基金经理创办的高科技资产管</span><span class="etc">>>></span>
+        </div>
+-->
+<div class="newsContent">
+    <div ng-repeat="list in pageContent" class="newsRepeat">
+            <!--<div class="Content" ng-show="showContent">{{list.content}}</div>
+            <p class="dot">.</p>-->
+            <div class="ContentWindow" ng-show="list.show==list.number">
+            <div class="Content">
+            <p class="closeNews" ng-click="list.show=false">x</p>
+            <p class="title">{{list.title}}</p>
+            <p><span>来源：桐昇网站</span><span>&nbsp&nbsp&nbsp&nbsp日期：{{list.date}}</span></p>
+            <p class="TongshengContent">&nbsp&nbsp&nbsp&nbsp上海桐昇通惠资产管理有限公司于2014年6月12日正式成立。本公司是由美国资深量化基金经理创办的高科技资产管理公司。主要创始人曾任职于世界顶级资产管理公司BGI量化投资部的资深基金经理以及高级研究，除此之外，其他核心成员也都在美国和国内著名投资机构(如Morgan Stanley，Millennium Partners，博时基金，南方基金等)有多年的投资、研究经验。</p>
+            <p class="TongshengContent">&nbsp&nbsp&nbsp&nbsp公司尊崇突破传统，科学投资，立足于运用前沿的金融理论研究，凭借全球市场长期的量化投资经验，与国内的市场情况紧密结合，依托先进计算机金融技术，实现科学投资决策，为客户资产赢得稳定可观的收益。</p>
+            </div>
+            </div>
+            <p class="dot">.</p>
+            <p class="title" ng-click="list.show=list.number">{{list.title}}</p>
+            <img src="img/news/new.png" ng-if="isNew(list.date)" >
+            <p class="newsDate">{{list.date}}</p>
+    </div>
+</div>
+<div class="page">
+    <p ng-show="leftDisp"  class='pagep clickHover' ng-click="leftNext()"><</p>
+    <div ng-repeat="page in pages">
+    <p ng-click="selectPage(page)"   class='clickHover' ng-show="disp[page]" ng-class='{"{{page}}":"highlight"}[highlight]'>{{page+1}}&nbsp</p>
+    </div>
+    <p ng-show="rightDisp" ng-click="rightNext()" class="clickHover">></p>
+</div>

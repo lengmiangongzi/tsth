@@ -1,0 +1,32 @@
+<div>
+    <div class="titleBack" >
+    <div class="titleTag" ng-mouseenter="proTag=true" ng-mouseleave="proTag=false">
+        <p class="clickHover">梧昇动态</p>
+    </div>
+    </div>
+</div>
+<div class="infoContent">
+    <div class="infoBox">
+        <div class='infoSelect newsFirstTag clickHover' ng-class='{"companyNews": "infoSel"}[newsTag]' ng-click="companyNews()"><p>公司动态</p></div>
+        <div class='infoSelect clickHover hide' ng-click="industryNews()" ng-class='{"industryNews": "infoSel"}[newsTag]'><p>行业动态</p></div>
+        <div></div>
+    </div>
+    <div class="contentLeft">
+        <div ng-show="newsTag == 'companyNews'"><companynews></companynews></div>
+        <div ng-show="newsTag == 'industryNews'"><industrynews></industrynews></div>
+    </div>
+    <div class="infoSearch">
+        <!--<p>搜索</p>
+        <div class="seaCon">
+        <input type="text" value="搜索关键字" onfocus="if(this.value == '搜索关键字') this.value = ''" onblur="if(this.value =='') this.value = '搜索关键字'"/><img src="img/info/search.png"></div>
+        <br>
+        <br>-->
+        <p>联系我们</p>
+        <div></div>
+        <div class="icons">
+            <img src="img/info/phone.png"/>
+            <p>021 555 333 22</p>
+            <img src="img/info/mail.png"><p>info@tsth.com</p>
+        </div>
+    </div>
+</div>

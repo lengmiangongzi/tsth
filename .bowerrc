@@ -1,0 +1,9 @@
+{
+    "directory": "js/bower_components",
+    "interactive": false,
+    "registry": {
+    "search": [
+      "http://f2e01-dev.datayes.com:7004"
+    ]
+  }
+}

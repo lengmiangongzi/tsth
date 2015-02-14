@@ -1,0 +1,23 @@
+<div class="top"></div>
+<div class="mainControl">
+    <div class="center">
+            <div class="lang">
+                <p class="margin " ng-class='{higlight: !English, common: English}' ng-click='English=!English'>中文</p>
+                <p ng-class='{higlight: English, common: !English}' ng-click='English=!English'>英文</p>
+            </div>
+            <div class="headTag">
+                <div class="headPicture"><img src="img/common/logo.png"><p>桐昇通惠</p></div>
+                <div class='mainFirst ' ng-class='{"home": "selFirst"}[tag]' ng-click='toHome()'><div class="homeBox clickHover"><img src="img/head/home-selected.png"  ng-show="tag=='home'"><img src="img/head/home.png" ng-show="!(tag=='home')"><p>首页</p></div></div>
+                <div class='mainCommon ' ng-class='{"info": "selectedHead"}[tag]' ng-click='toInfo()'><p class="clickHover">关于我们</p></div>
+                <!--<div class='mainCommon ' ng-class='{"product": "selectedHead"}[tag]' ng-click='toProduct()'><p class="clickHover" style="display:none">产品介绍</p></div>-->
+                <div class='mainCommon ' ng-class='{"news": "selectedHead"}[tag]' ng-click='toNews()'><p class="clickHover">桐昇动态</p></div>
+                <div class='mainCommon ' ng-class='{"risk": "selectedHead"}[tag]' ng-click='toRisk()'><p class="clickHover">投资风控</p></div>
+                <div class='mainCommon clickHover' ng-class='{"employ": "selectedHead"}[tag]' ng-click='toEmploy()'><p class="clickHover">招贤纳士</p></div>
+                <div class='mainCommon ' ng-class='{"contact": "selectedHead"}[tag]' ng-click='toContact()'><p class="clickHover">联系我们</p></div>
+            </div>
+            <div id="loginButton">
+                <input type="button" value="登陆" ng-class='{"login": "clicked","regist":"clear"}[headBu]' ng-click='login()'>
+                <input type="button" value="注册" ng-class='{"login": "clear","regist":"clicked"}[headBu]' ng-click='regist()'>
+            </div>
+    </div>
+</div>

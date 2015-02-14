@@ -1,0 +1,6 @@
+{
+    "backendname": "tsth",
+    "base": "",
+    "defaultLang": "zh",
+    "supportedLangs": ["zh", "en"]
+}

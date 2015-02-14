@@ -1,0 +1,30 @@
+{
+  "name": "tsth",
+  "version": "1.0.0",
+  "description": "桐昇通惠",
+  "keywords": [
+    "tsth"
+  ],
+  "authors": [
+    "hao.zuo"
+  ],
+  "homepage": "http://svn02-dev.datayes.com/Achilles/tsth",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "js/bower_components",
+    "mock",
+    "css",
+    "index.html"
+  ],
+  "dependencies": {
+    "slick-carousel": "1.3.6",
+    "angular": "1.3.7",
+    "angular-route": "1.3.7",
+    "angular-animate": "1.3.7",
+    "angular-h-sweetalert": "1.3.1",
+    "sweetalert": "0.4.1",
+    "angular-translate": "~2.4.2",
+    "animate.css": "~3.2.0"
+  }
+}

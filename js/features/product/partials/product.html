@@ -1,0 +1,127 @@
+<div>
+    <div class="titleBack" >
+    <div class="titleTag" ng-mouseenter="proTag=true" ng-mouseleave="proTag=false">
+        <p class="clickHover">产品介绍</p>
+        <p ng-show="proTag"> 111111</p>
+        <p ng-show="proTag"> 111111</p>
+    </div>
+    </div>
+</div>
+<div class="about">
+        <div class="employe-content">
+            <p >现招募Java开发工程师、前端工程师、测试工程师和运维工程师，诚邀有志于此的人才加盟，共创事业。</p>
+            <p>具体职位介绍请见以下，请把简历发送到我们邮箱，邮件名称：姓名+应聘职位（包括岗位编号）</p>
+
+            <div class="employe-item" ng-class="{down: javaFlag}">
+                <h6 ng-click="javaFlag = !javaFlag" class="">00026-Java开发工程师<i>&nbsp&nbsp&nbsp</i></h6>
+                <dl class="clearfix">
+                    <dt>工作地点：</dt>
+                    <dd>上海</dd>
+                    <dt>岗位职责：</dt>
+                    <dd>负责公司相关产品后端开发工作</dd>
+                    <dt class="long">岗位要求：</dt>
+                    <dd>
+                    1.计算机软件相关专业本科以上学历；<br>
+                    2.具备独立解决问题的能力，能承受一定的工作压力；<br>
+                    3.五年以上Java编程经验；<br>
+                    4.熟悉MySQL和SQL语言，具备数据库性能调优能力；<br>
+                    5.熟悉应用服务器 Tomcat的使用和配置；<br>
+                    6.熟悉Web Service开发，熟悉Axis2框架；<br>
+                    7.精通Java语言，熟悉面向对象设计方法，熟悉J2EE技术架构下的Web软件开发，熟悉Struts, Spring, Hibernate；<br>
+                    8.活跃地参与开源社区，对各种java开源组件有初步了解，懂开源方面的知识，有大型项目经验；<br>
+                    9.熟悉SOA的架构及相关java开源组件，如synapse,axis2,ode者优先；
+                    </dd>
+                </dl>
+            </div><!-- end employe-item -->
+
+            <div class="employe-item down" ng-class="{down: !testFlag}">
+                <h6 ng-click="testFlag=!testFlag" class="">00028-测试开发工程师<i>&nbsp&nbsp&nbsp</i></h6>
+                <dl class="clearfix">
+                    <dt>工作地点：</dt>
+                    <dd>上海</dd>
+                    <dt>岗位职责：</dt>
+                    <dd>开发敏捷测试平台实现测试自动化</dd>
+                    <dt class="long">岗位要求：</dt>
+                    <dd>
+                    1.本科或以上计算机或相关学科学历；<br>
+                    2.能熟练使用Java或C++编程；<br>
+                    3.熟悉自动化测试理论和方法，了解各种测试工具；<br>
+                    4.熟悉Junit等测试框架，能够快速实现有效的测试用例； <br>
+                    5.熟悉Selenium、TestNG等测试工具，能够进行二次开发；<br>
+                    6.熟悉Linux、shell脚本开发；<br>
+                    7.掌握Python语言；<br>
+                    8.思路清晰，善于抽象，学习能力强；<br>
+                    9.具备良好的沟通能力和团队协作精神，积极进取，诚实正直；<br>
+                    10.有数据库或NoSQL应用开发经验为佳；
+                    </dd>
+                </dl>
+            </div><!-- end employe-item -->
+
+            <div class="employe-item down" ng-class="{down: !webFlag}">
+                <h6 ng-click="webFlag = !webFlag" class="">00004-前端开发工程师<i>&nbsp&nbsp&nbsp</i></h6>
+                <dl class="clearfix">
+                    <dt>工作地点：</dt>
+                    <dd>上海</dd>
+                    <dt>岗位职责：</dt>
+                    <dd>开发基于各种用户界面的WEB应用，能准确把握各浏览器、运行平台的特性，保证产品的兼容性；并能与后端工程师一起完成系统联调、集成测试等工作</dd>
+                    <dt class="long">岗位要求：</dt>
+                    <dd>
+                    1.本科或以上计算机或相关学科学历<br>
+                    2.熟练掌握JavaScript语法，并精通html和掌握基本的css配置<br>
+                    3.熟练掌握一个或多个JavaScript类库，如：Backbone、RequireJS、Underscore、AngularJS、Jquery、Sencha、HighChart、HighStock等<br>
+                    4.熟练掌握一种或多种JavaScript开发管理工具，如：Grunt、Gulp<br>
+                    5.熟练掌握一种或多种css转义工具，如：less、sass、compass<br>
+                    6.熟练掌握一种或多种JavaScript压缩工具，如：Uglify、Compress等<br>
+                    7.思路清晰,善于抽象,学习能力强-具备良好的沟通能力和团队协作精神<br>
+                    8.积极进取,诚实正直<br>
+                    9.了解金融领域知识者优先
+
+                    </dd>
+                </dl>
+            </div><!-- end employe-item -->
+
+            <div class="employe-item down" ng-class="{down: !maintenanceFlag}">
+                <h6 ng-click="maintenanceFlag = !maintenanceFlag" class="">00008-应用运维工程师<i>&nbsp&nbsp&nbsp</i></h6>
+                <dl class="clearfix">
+                    <dt>工作地点：</dt>
+                    <dd>上海</dd>
+                    <dt class="long">岗位职责：</dt>
+                    <dd>
+                    1.负责金融应用和系统的安装调试和运行维护等<br>
+                    2.在股市开盘前后值班
+                    </dd>
+                    <dt class="long">岗位要求：</dt>
+                    <dd>
+                        1.本科以上学历，计算机相关专业<br>
+                        2.熟悉网络管理及linux系统运维<br>
+                        3.熟练脚本编程<br>
+                        4.熟悉基本的数据库管理<br>
+                        5.有开发经验者优先<br>
+                        6.有金融知识者优先
+                    </dd>
+                </dl>
+            </div><!-- end employe-item -->
+
+            <div class="employe-item down" ng-class="{down: !pythonFlag}">
+                <h6 ng-click="pythonFlag = !pythonFlag" class="">00010-Python开发工程师<i>&nbsp&nbsp&nbsp</i></h6>
+                <dl class="clearfix">
+                    <dt>工作地点：</dt>
+                    <dd>上海</dd>
+                    <dt class="long">岗位职责：</dt>
+                    <dd>
+                    1.负责为公司所有的工程团队提供统一的开发测试工具和框架<br>
+                    2.设计并开发与产品研发测试发布相关的自动化体系
+                    </dd>
+                    <dt class="long">岗位要求：</dt>
+                    <dd>
+                        1.本科以上学历，计算机相关专业<br>
+                        2.熟练python,perl编程<br>
+                        3.熟悉linux系统运维<br>
+                        4.熟悉基本的数据库管理
+                        <div id='draw'>1111</div>
+                    </dd>
+                </dl>
+            </div><!-- end employe-item -->
+            <chart></chart>
+        </div><!-- end container -->
+    </div>

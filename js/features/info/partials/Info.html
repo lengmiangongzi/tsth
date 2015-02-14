@@ -1,0 +1,31 @@
+<div>
+    <div class="titleBack" >
+    <div class="titleTag" ng-mouseenter="proTag=true" ng-mouseleave="proTag=false">
+        <p class="clickHover">关于我们</p>
+    </div>
+    </div>
+</div>
+<div class="infoBox">
+        <div class='infoSelect firstSlecet clickHover' ng-class='{"company": "infoSel"}[tag]' ng-click="toCompany()"><p>公司简介</p><img src="img/info/arrow.png" ng-show="tag=='company'"></div>
+        <div class='infoSelect clickHover' ng-click="toTeam()" ng-class='{"team": "infoSel"}[tag]'><p style="margin-left: -63px;">团队介绍</p><img src="img/info/arrow.png" ng-show="tag=='team'"></div>
+</div>
+<div class="infoContent">
+    <div class="infoSearch">
+        <!--<p>搜索</p>
+        <div class="seaCon">
+        <input type="text" value="搜索关键字" onfocus="if(this.value == '搜索关键字') this.value = ''" onblur="if(this.value =='') this.value = '搜索关键字'"/><img src="img/info/search.png"></div>
+        <br>
+        <br>-->
+        <p>联系我们</p>
+        <div></div>
+        <div class="icons">
+            <img src="img/info/phone.png"/>
+            <p>021 555 333 22</p>
+            <img src="img/info/mail.png"><p>info@tsth.com</p>
+        </div>
+    </div>
+    <div class="contentLeft">
+        <div ng-show="tag == 'company'"><company></company></div>
+        <div ng-show="tag == 'team'"><team></team></div>
+    </div>
+</div>

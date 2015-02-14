@@ -1,0 +1,56 @@
+{
+    "baseUrl": ".",
+    "paths": {
+        "achy": "empty:",
+        "bootstrapjs": "empty:",
+        "fontawesome": "../css/main",
+        "yestrap-light": "../css/main",
+        "business/js/main": "./main",
+        "business/css/main": "../css/main",
+        "etc": "../etc",
+        "js": "./",
+        "libs": "./libs",
+        "fw": "./fw",
+        "ext": "./fw/ext",
+        "init": "./fw/init",
+        "config": "./fw/config",
+        "service": "./fw/service",
+        "features": "./features",
+        "angular": "./bower_components/angular/angular.min",
+        "angular-animate": "./bower_components/angular-animate/angular-animate.min",
+        "angular-route": "./bower_components/angular-route/angular-route.min",
+        "angular-translate": "./bower_components/angular-translate/angular-translate.min",
+        "angular-sweetalert": "./bower_components/angular-h-sweetalert/dist/ngSweetAlert.min",
+        "sweetalert": "./bower_components/sweetalert/lib/sweet-alert.min",
+        "sweetalertcss": "./bower_components/sweetalert/lib/sweet-alert",
+        "animateCss": "./bower_components/animate.css/animate.min",
+        "splash": "./libs/splash"
+    },
+    "shim": {
+        "angular": {
+            "exports": "angular"
+        },
+        "angular-animate": {
+            "deps": ["angular"]
+        },
+        "angular-route": {
+            "deps": ["angular"]
+        },
+        "angular-sweetalert": {
+            "deps": ["angular", "sweetalert"]
+        },
+        "sweetalert": {
+                "deps": ["css!sweetalertcss"]
+        },
+        "angular-translate": {
+            "deps": ["angular"]
+        }
+    },
+    "findNestedDependencies": false,
+    "exclude": [
+        "achy", "config/AppConfig", "bootstrapjs"
+    ],
+    "buildCSS": false,
+    "name": "business/js/main",
+    "out": "main.js"
+}

@@ -1,0 +1,78 @@
+@import "./variables";
+@import "./header";
+@import "./footer";
+@import "./contact";
+@import "./home";
+@import "./info";
+@import "./employ";
+@import "./news";
+@import "./footer";
+//colors
+body{
+    background-color: #fff !important;
+}
+.mom-splashing{
+    background-color: white;
+}
+.titleBack{
+    background-image: url("../img/common/title.png");
+    height: 100px;
+    .titleTag{
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        height: 300px;
+        p{
+        position: relative;
+        top:75px;
+        width: 100px;
+        font-size: 18px;
+        font-weight: 900;
+        }
+    }
+}
+.color-primary{
+    color: @brand-primary;
+}
+.color-success{
+    color: @brand-success;
+}
+.color-info{
+    color: @brand-info;
+}
+.color-warning{
+    color: @brand-warning;
+}
+.color-danger{
+    color: @brand-danger;
+}
+
+// remove underline from links
+a,
+a:hover{
+    text-decoration: none !important;
+}
+
+
+@imgUrl:'../img';
+
+
+body{
+    font-family: 'Microsoft Yahei','Ariai',sans-serif !important;
+}
+
+.tsth_contain{
+    width: 980px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.icon_bg(){
+    background-image: url('@{imgUrl}/sprite.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.clickHover{
+    cursor:pointer ;
+
+}
